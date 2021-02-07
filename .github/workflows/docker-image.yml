@@ -2,11 +2,10 @@ name: GHCR CI/CD
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
-    runs-on:
-      - ubuntu-latest
+    runs-on: ubuntu-latest
     env:
       SERVICE_NAME: ghcr.io/platformercloud/curl-jq
       CONTAINER_REGISTRY: ghcr.io
